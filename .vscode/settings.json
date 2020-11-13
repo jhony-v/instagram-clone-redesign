@@ -1,0 +1,17 @@
+{
+    "colorize.languages": [
+        "css",
+        "sass",
+        "scss",
+        "less",
+        "postcss",
+        "sss",
+        "stylus",
+        "xml",
+        "svg",
+        "javascript",
+        "jsx"
+    ],
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 500
+}

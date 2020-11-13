@@ -2,12 +2,13 @@
     "compilerOptions": {
         "baseUrl": ".",
         "paths": {
-            "@modules/*" : ["modules"],
-            "@views/*" : ["views"],
-            "@components/*" : ["packages/components"],
-            "@features/*" : ["packages/features"],
-            "@icons/*" : ["packages/common/icons"],
-            "@styles/*" : ["packages/common/styles"],
+            "@modules/*" : ["modules/*"],
+            "@views/*" : ["views/*"],
+            "@components/*" : ["packages/components/*"],
+            "@containers/*" : ["packages/containers/*"],
+            "@features/*" : ["packages/features/*"],
+            "@icons/*" : ["packages/common/icons/*"],
+            "@styles/*" : ["packages/common/styles/*"],
         },
         "jsx": "react"
     }

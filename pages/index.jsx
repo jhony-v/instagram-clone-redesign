@@ -1,7 +1,5 @@
+import ContainerDrawer from "@containers/ContainerDrawer";
 
 export default function Home() {
-  return (
-    <div>
-    </div>
-  )
+  return <ContainerDrawer>lorpejp</ContainerDrawer>;
 }
