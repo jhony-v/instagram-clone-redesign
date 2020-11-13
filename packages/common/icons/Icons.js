@@ -2,8 +2,8 @@ import { VscHome } from "react-icons/vsc";
 import { IoMdHome, IoMdPaperPlane } from "react-icons/io";
 import { BsBookmark, BsFillBookmarkFill,BsHeart,BsFillHeartFill } from "react-icons/bs";
 import { AiFillCompass, AiOutlineCompass } from "react-icons/ai";
-import { FaRegComment } from "react-icons/fa";
 import { RiSearchLine } from "react-icons/ri";
+import { GoComment } from "react-icons/go";
 
 const Icons = {
   Home: {
@@ -26,7 +26,7 @@ const Icons = {
     Active: AiFillCompass
   },
   Comment: {
-    Default: FaRegComment
+    Default: GoComment
   },
   Search : {
     Default:RiSearchLine,

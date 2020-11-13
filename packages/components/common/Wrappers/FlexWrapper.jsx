@@ -8,4 +8,5 @@ export default styled("div", (props) => ({
   }),
   alignItems: props.$alignCenter && "center",
   flexDirection: props.$column && "column",
+  justifyContent: props.$spaceBetween && "space-between",
 }));
