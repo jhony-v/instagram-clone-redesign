@@ -7,4 +7,5 @@ export default styled("div", (props) => ({
     alignItems: "center",
   }),
   alignItems: props.$alignCenter && "center",
+  flexDirection: props.$column && "column",
 }));

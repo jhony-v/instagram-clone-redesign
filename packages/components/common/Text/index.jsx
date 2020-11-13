@@ -1,11 +1,18 @@
 import { styled } from "styletron-react";
 
 export default styled("span", (props) => ({
-  fontWeight: props.$weight && "bold",
+  ...props.$weight && {
+    fontWeight :"bold",
+  },
+  ...props.$fluid && {
+    display : "block",
+  },
   fontSize: {
     small: ".8rem",
     default: "14px",
     medium: "1.3rem",
     big: "1.6rem",
   }[props.$fontSize || "default"],
+  textAlign: props.$center && "center",
+  
 }));

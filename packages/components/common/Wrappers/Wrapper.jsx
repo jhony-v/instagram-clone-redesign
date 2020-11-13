@@ -1,7 +1,9 @@
 import { styled } from "styletron-react";
 
-export default styled("div", ({ $w, $h, $m }) => ({
+export default styled("div", ({ $w, $h, $m, $p, $centerContent }) => ({
   width: $w,
-  heght: $h,
+  hegiht: $h,
   margin: $m,
+  padding: $p,
+  textAlign: $centerContent && "center",
 }));
