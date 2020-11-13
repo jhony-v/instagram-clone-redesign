@@ -5,6 +5,7 @@ S.Avatar = styled("img", ({ $dimension,$isNew }) => ({
   width: $dimension,
   height: $dimension,
   borderRadius: "100%",
+  "-webkit-user-drag" : "none",
   ...$isNew && {
       border:"2px solid white",
   }
@@ -13,6 +14,7 @@ S.Avatar = styled("img", ({ $dimension,$isNew }) => ({
 S.Wrapper = styled("div", ({ $isNew }) => ({
   display: "inline-flex",
   borderRadius: "100%",
+  flex:"none",
   ...$isNew && {
       background : "linear-gradient(-65deg,var(--itg-app-primary-color),var(--itg-app-secondary-color))",
       padding:"2px",

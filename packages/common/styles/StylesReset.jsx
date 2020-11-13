@@ -23,6 +23,7 @@ export default function StylesReset() {
     }
     * {
         box-sizing:border-box;
+        margin:0;
     }
     article, aside, details, figcaption, figure,
     footer, header, hgroup, main, menu, nav, section {

@@ -8,7 +8,9 @@ export default function StylesThemeVariables() {
           --itg-app-primary-color: #ff068f;
           --itg-app-secondary-color: #f89512;
           --itg-app-background: #f5f5f5;
+          --itg-app-scrollbar-thumb-background:#d1d1d1;
           --itg-navigator-background: #ffffff;
+          --itg-navigator-height: 60px;
           --itg-root-dark-alpha-color-00: #ffffff;
           --itg-root-dark-alpha-color-10: #eeeeee;
           --itg-root-dark-alpha-color-20: #e6e5e5;
@@ -26,12 +28,19 @@ export default function StylesThemeVariables() {
           --itg-app-button-call-to-action-color: #ffffff;
           --itg-app-icon-default-color: #0e0e0e;
           --itg-reaction-like-default-color: #0e0e0e;
-          --itg-reaction-like-active-color: #ff068f;
-          --itg-navigator-height:60px;
+          --itg-reaction-like-active-color: #ff065d;
         }
 
         body {
-            background-color:var(--itg-app-background);
+          background-color: var(--itg-app-background);
+        }
+        body::-webkit-scrollbar {
+          background-color: transparent;
+          width:10px;
+        }
+        body::-webkit-scrollbar-thumb {
+          background-color: var(--itg-app-scrollbar-thumb-background);
+          border-radius:10px;
         }
       `}
     </style>

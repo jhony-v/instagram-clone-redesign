@@ -3,9 +3,8 @@ import { withStyleDeep } from "styletron-react";
 
 const S = {};
 S.AccountButtonFixedWrapper = withStyleDeep(FixedWrapper, {
-  right: "0",
-  top: "0",
-  transform: "translateX(-50px)",
+  top: 0,
+  right: "50px",
   display:"flex",
   alignItems: "center",
   height: "var(--itg-navigator-height)",
