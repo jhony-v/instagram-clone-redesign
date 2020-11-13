@@ -4,7 +4,6 @@ import LikeIcon from "@components/common/ReactionsIcons/LikeIcon";
 import FlexWrapper from "@components/common/Wrappers/FlexWrapper";
 import Wrapper from "@components/common/Wrappers/Wrapper";
 import Icons from "@icons/Icons";
-import React from "react";
 import FeedReaction from "../Atoms/FeedReaction";
 import FeedUserCreator from "../Atoms/FeedUserCreator";
 

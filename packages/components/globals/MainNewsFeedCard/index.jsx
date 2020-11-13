@@ -1,4 +1,3 @@
-import React from "react";
 import S from "./Atoms/elements";
 import FeedImagePreview from "./Atoms/FeedImagePreview";
 import FeedFooter from "./Molecules/FeedFooter";

@@ -14,7 +14,7 @@
     "react": "^16.8.0",
     "react-dom": "^16.8.0",
     "react-icons": "^3.11.0",
-    "react-swpring": "^8.0.27",
+    "react-spring": "^8.0.27",
     "react-use-gesture": "^8.0.0",
     "recoil": "^0.1.2",
     "styletron-engine-atomic": "^1.1.2",

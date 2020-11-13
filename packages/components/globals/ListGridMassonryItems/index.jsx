@@ -1,5 +1,4 @@
 import Wrapper from "@components/common/Wrappers/Wrapper";
-import React from "react";
 import S from "./Atoms/elements";
 
 const ListGridMassonryItems = ({ children }) => {

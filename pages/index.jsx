@@ -1,4 +1,3 @@
-import LikeIcon from "@components/common/ReactionsIcons/LikeIcon";
 import Wrapper from "@components/common/Wrappers/Wrapper";
 import ListGridMassonryItems from "@components/globals/ListGridMassonryItems";
 import MainNewsFeedCard from "@components/globals/MainNewsFeedCard";
@@ -7,7 +6,7 @@ import ContainerDrawer from "@containers/ContainerDrawer";
 import ContainerUserStories from "@containers/ContainerUserStories";
 import faker from "faker";
 
-export default function Home() {
+export default function Index() {
   return (
     <ContainerDrawer>
       <Wrapper $p="40px 0">

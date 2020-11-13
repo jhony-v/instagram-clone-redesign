@@ -2,7 +2,6 @@ import Avatar from "@components/common/Avatar";
 import Text from "@components/common/Text";
 import FlexWrapper from "@components/common/Wrappers/FlexWrapper";
 import Wrapper from "@components/common/Wrappers/Wrapper";
-import React from "react";
 
 const UserAvatarStoryCreated = ({ image, username, onClick }) => {
   return (
