@@ -1,16 +1,26 @@
-import FlexWrapper from "@components/common/Wrappers/FlexWrapper"
-import Icons from "@icons/Icons"
-import ItemNavigator from "./Atoms/ItemNavigator"
+import BaseIconActivation from "@components/common/BaseIconActivation";
+import FloatingActionButton from "@components/common/FloatingActionButton";
+import Icons from "@icons/Icons";
+import S from "./Atoms/elements";
+import ItemNavigator from "./Atoms/ItemNavigator";
 
 const ContainerNavigator = () => {
-    return (
-        <FlexWrapper>
-            <ItemNavigator href="/" icon={Icons.Home} />
-            <ItemNavigator href="/direct" icon={Icons.Search} />
-            <ItemNavigator href="/explore" icon={Icons.Compass} />
-            <ItemNavigator href="/heart" icon={Icons.Heart} />
-        </FlexWrapper>
-    )
-}
+  return (
+    <S.Wrapper>
+      <ItemNavigator href="/" icon={Icons.Home} />
+      <ItemNavigator href="/direct" icon={Icons.Search} />
+      <ItemNavigator href="/explore" icon={Icons.Compass} />
+      <ItemNavigator href="/heart" icon={Icons.Heart} />
+    </S.Wrapper>
+  );
+};
 
-export default ContainerNavigator
+ContainerNavigator.FloatingButtonCreateNewPost = ({ onClick }) => {
+  return (
+    <FloatingActionButton onClick={onClick}>
+      <BaseIconActivation icon={Icons.Camera}  />
+    </FloatingActionButton>
+  );
+};
+
+export default ContainerNavigator;

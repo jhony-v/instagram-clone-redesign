@@ -1,6 +1,4 @@
-import FlexWrapper from "@components/common/Wrappers/FlexWrapper";
-
-const { styled, withStyleDeep } = require("styletron-react");
+import { styled } from "styletron-react";
 
 const S = {};
 S.CardWrapper = styled("article", {

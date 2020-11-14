@@ -11,7 +11,7 @@ S.PositionFixed = withStyleDeep(FixedWrapper, {
   display:"flex",
   justifyContent:"center",
   alignItems:"center",
-  borderBottom:"1px solid var(--itg-root-dark-alpha-color-20)"
+  borderBottom:"1px solid var(--itg-root-dark-alpha-color-20)",
 });
 
 const LayoutHeader = ({ children }) => {

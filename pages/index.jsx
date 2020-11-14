@@ -3,6 +3,7 @@ import ListGridMassonryItems from "@components/globals/ListGridMassonryItems";
 import MainNewsFeedCard from "@components/globals/MainNewsFeedCard";
 import LayoutDividerWithTitle from "@components/layouts/LayoutDividerWithTitle";
 import ContainerDrawer from "@containers/ContainerDrawer";
+import ContainerNavigator from "@containers/ContainerNavigator";
 import ContainerUserStories from "@containers/ContainerUserStories";
 import faker from "faker";
 
@@ -26,7 +27,7 @@ export default function Index() {
                     width: "100%",
                   }}
                   user={{
-                    username: "Jhony vega",
+                    username: faker.name.firstName("m"),
                     avatar: faker.random.image(),
                   }}
                   image={faker.random.image()}
@@ -41,7 +42,8 @@ export default function Index() {
               ))}
           </ListGridMassonryItems>
         </LayoutDividerWithTitle>
-      </Wrapper>
-    </ContainerDrawer>
+        </Wrapper>
+        <ContainerNavigator.FloatingButtonCreateNewPost/>
+    </ContainerDrawer> 
   );
 }

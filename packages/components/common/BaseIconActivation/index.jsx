@@ -5,7 +5,7 @@ const BaseIconActivation = ({active,icon:Icon,colorActive,...restProps}) => {
 }
 
 BaseIconActivation.defaultProps = {
-    size : 25
+    size : 25,
 }
 
 export default BaseIconActivation;
