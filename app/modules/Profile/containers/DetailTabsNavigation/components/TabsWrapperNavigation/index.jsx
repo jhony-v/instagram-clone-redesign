@@ -4,15 +4,21 @@ import { withStyleDeep } from 'styletron-react'
 
 const Wrapper = withStyleDeep(FlexWrapper, {
     display: "flex",
-    justifyContent:"center",
+    justifyContent: "center",
     borderTop: "1px solid var(--itg-root-dark-alpha-color-20)",
-    marginTop: "40px"
+    marginTop: "40px",
+});
+
+const InsideWrapper = withStyleDeep(FlexWrapper, {
+    position: "relative",
 });
 
 const TabsWrapperNavigation = ({ children }) => {
     return (
        <Wrapper>
-          {children}
+          <InsideWrapper>
+             {children}
+          </InsideWrapper>
        </Wrapper>
     )
 }
