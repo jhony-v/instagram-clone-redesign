@@ -4,14 +4,16 @@ import FlexWrapper from "@components/common/Wrappers/FlexWrapper";
 import Wrapper from "@components/common/Wrappers/Wrapper";
 
 const UserAvatarStoryCreated = ({ image, username, onClick }) => {
-  return (
-    <FlexWrapper $column onClick={onClick}>
-      <Avatar isNew image={image} dimension="60px" />
-      <Wrapper $m="5px 0 0 0">
-          <Text $fluid $center $weight>{username}</Text>
-      </Wrapper>
-    </FlexWrapper>
-  );
+   return (
+      <FlexWrapper $column onClick={onClick} $style={{cursor:"pointer"}}>
+         <Avatar isNew image={image} dimension="60px" />
+         <Wrapper $m="5px 0 0 0">
+            <Text $fluid $center $weight>
+               {username}
+            </Text>
+         </Wrapper>
+      </FlexWrapper>
+   );
 };
 
 export default UserAvatarStoryCreated;

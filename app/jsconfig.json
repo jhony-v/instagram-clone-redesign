@@ -6,7 +6,6 @@
             "@views/*" : ["views/*"],
             "@components/*" : ["packages/components/*"],
             "@containers/*" : ["packages/containers/*"],
-            "@features/*" : ["packages/features/*"],
             "@icons/*" : ["packages/common/icons/*"],
             "@styles/*" : ["packages/common/styles/*"],
         },

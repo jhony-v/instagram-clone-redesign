@@ -1,10 +1,5 @@
-
 const LayoutMessageContainer = () => {
-    return (
-        <div>
-            
-        </div>
-    )
-}
+   return <div></div>;
+};
 
-export default LayoutMessageContainer
+export default LayoutMessageContainer;

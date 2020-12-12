@@ -1,0 +1,11 @@
+node_modules
+.vscode
+package.json
+jsconfig.json
+next.config.js
+jest.config.js
+.next
+/public
+/styles
+/**/*.css
+yarn.lock

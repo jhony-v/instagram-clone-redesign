@@ -1,0 +1,32 @@
+{
+   "root": true,
+   "parserOptions": {
+      "ecmaVersion": 2020,
+      "sourceType": "module",
+      "ecmaFeatures": {
+         "jsx": true
+      }
+   },
+   "settings": {
+      "react": {
+         "version": "detect"
+      }
+   },
+   "env": {
+      "node": true,
+      "browser": true
+   },
+   "plugins": [
+      "prettier",
+      "react",
+      "eslint-plugin-jsx-a11y",
+      "eslint-plugin-react-hooks"
+   ],
+   "rules": {
+      "no-alert": "error",
+      "block-spacing": "error",
+      "space-before-blocks": "warn",
+      "react/destructuring-assignment": "error",
+      "react/jsx-indent": ["error", 3]
+   }
+}

@@ -8,21 +8,21 @@ import FeedReaction from "../Atoms/FeedReaction";
 import FeedUserCreator from "../Atoms/FeedUserCreator";
 
 const FeedFooter = ({ user, likes, comments }) => {
-  return (
-    <Wrapper $m="15px 0 0">
-      <FlexWrapper $spaceBetween>
-        <FeedUserCreator user={user} />
-        <FlexWrapper $alignCenter>
-          <FeedReaction icon={<LikeIcon like={likes.like} />}>
-            {likes.total}
-          </FeedReaction>
-          <FeedReaction icon={<BaseIconActivation icon={Icons.Comment} />}>
-            {comments.total}
-          </FeedReaction>
-        </FlexWrapper>
-      </FlexWrapper>
-    </Wrapper>
-  );
+   return (
+      <Wrapper $m="15px 0 0">
+         <FlexWrapper $spaceBetween>
+            <FeedUserCreator user={user} />
+            <FlexWrapper $alignCenter>
+               <FeedReaction icon={<LikeIcon like={likes.like} />}>
+                  {likes.total}
+               </FeedReaction>
+               <FeedReaction icon={<BaseIconActivation icon={Icons.Comment} />}>
+                  {comments.total}
+               </FeedReaction>
+            </FlexWrapper>
+         </FlexWrapper>
+      </Wrapper>
+   );
 };
 
 export default FeedFooter;
