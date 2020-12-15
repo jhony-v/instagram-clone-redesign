@@ -1,4 +1,3 @@
-import Avatar from "@components/common/Avatar";
 import BaseIconActivation from "@components/common/BaseIconActivation";
 import LikeIcon from "@components/common/ReactionsIcons/LikeIcon";
 import FlexWrapper from "@components/common/Wrappers/FlexWrapper";
@@ -13,10 +12,10 @@ const FeedFooter = ({ user, likes, comments }) => {
          <FlexWrapper $spaceBetween>
             <FeedUserCreator user={user} />
             <FlexWrapper $alignCenter>
-               <FeedReaction icon={<LikeIcon like={likes.like} />}>
+               <FeedReaction icon={<LikeIcon size={20} like={likes.like} />}>
                   {likes.total}
                </FeedReaction>
-               <FeedReaction icon={<BaseIconActivation icon={Icons.Comment} />}>
+               <FeedReaction icon={<BaseIconActivation size={20} icon={Icons.Comment} />}>
                   {comments.total}
                </FeedReaction>
             </FlexWrapper>

@@ -23,6 +23,7 @@
    --itg-app-icon-default-color: #0e0e0e;
    --itg-reaction-like-default-color: #0e0e0e;
    --itg-reaction-like-active-color: #ff065d;
+   --itg-overlay-background:rgba(0,0,0,.4);
 }
 
 body {

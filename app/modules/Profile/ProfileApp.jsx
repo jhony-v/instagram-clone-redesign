@@ -3,6 +3,7 @@ import Wrapper from "@components/common/Wrappers/Wrapper";
 import MainProfileHeader from "./containers/MainProfileHeader/MainProfileHeader";
 import DetailTabsNavigation from "./containers/DetailTabsNavigation/DetailTabsNavigation";
 import ContainerUserStories from "@containers/ContainerUserStories";
+import PreviewOfTabNavigation from "./containers/PreviewOfTabNavigation/PreviewOfTabNavigation";
 
 const ProfileApp = () => {
    return (
@@ -10,6 +11,7 @@ const ProfileApp = () => {
          <MainProfileHeader />
          <ContainerUserStories/>
          <DetailTabsNavigation />
+         <PreviewOfTabNavigation/>
       </Wrapper>
    );
 };

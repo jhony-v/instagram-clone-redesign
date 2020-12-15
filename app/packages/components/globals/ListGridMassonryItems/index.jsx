@@ -1,10 +1,10 @@
 import Wrapper from "@components/common/Wrappers/Wrapper";
 import S from "./Atoms/elements";
 
-const ListGridMassonryItems = ({ children, repeat }) => {
+const ListGridMassonryItems = ({ children, repeat, gap }) => {
    return (
       <Wrapper $m="auto">
-         <S.GridMassonry $repeat={repeat}>{children}</S.GridMassonry>
+         <S.GridMassonry $repeat={repeat} $gap={gap}>{children}</S.GridMassonry>
       </Wrapper>
    );
 };

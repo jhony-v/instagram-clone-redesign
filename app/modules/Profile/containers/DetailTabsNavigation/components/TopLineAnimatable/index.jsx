@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { memo } from 'react'
 import { Spring, config } from 'react-spring/renderprops.cjs'
 import { styled } from 'styletron-react'
 
@@ -31,4 +31,4 @@ const TopLineAnimatable = ({ fromX, toX }) => (
    </Spring>
 );
 
-export default TopLineAnimatable
+export default memo(TopLineAnimatable);

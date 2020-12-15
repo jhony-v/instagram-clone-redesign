@@ -8,8 +8,8 @@ import {
 } from "react-icons/bs";
 import { AiFillCompass, AiOutlineCompass } from "react-icons/ai";
 import { RiSearchLine } from "react-icons/ri";
-import { GoComment } from "react-icons/go";
 import { FiCamera } from "react-icons/fi";
+import { FaRegComment, FaComment } from "react-icons/fa";
 
 const Icons = {
    Home: {
@@ -32,7 +32,8 @@ const Icons = {
       Active: AiFillCompass,
    },
    Comment: {
-      Default: GoComment,
+      Default: FaRegComment,
+      Active: FaComment,
    },
    Search: {
       Default: RiSearchLine,

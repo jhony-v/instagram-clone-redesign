@@ -1,22 +1,47 @@
-import React from 'react'
+import React, { memo } from 'react'
+import Text from "@components/common/Text";
 import Wrapper from '@components/common/Wrappers/Wrapper';
-import * as S from "./elements";
+import { styled, withStyleDeep } from "styletron-react";
+import { useSetChangeTabsNavigationStore } from '@modules/Profile/hooks/useChangeTabsNavigation';
+
+const TabWrapper = styled("div", ({ $selected }) => ({
+   display: "flex",
+   alignItems: "center",
+   padding: "10px",
+   cursor: "pointer",
+   position: "relative",
+   width: "150px",
+   justifyContent: "center",
+   transition: "color .3s",
+   ...!$selected && {
+      color: "var(--itg-root-dark-alpha-color-50)",
+   },
+}))
+
+const TabText = withStyleDeep(Text, ({ $selected }) => ({
+   textTransform: "uppercase",
+   ...!$selected && {
+      color: "var(--itg-root-dark-alpha-color-50)",
+   }
+}))
 
 const TabOption = ({ onTabOptionSelected, id, selected, text, icon: IconComponent }) => {
+   const changeTab = useSetChangeTabsNavigationStore();
    const onClick = (event) => {
       onTabOptionSelected({
          id,
          offsetLeft: event.currentTarget.offsetLeft
       });
+      changeTab(id);
    }
    return (
-      <S.Wrapper onClick={onClick} $selected={selected}>
+      <TabWrapper onClick={onClick} $selected={selected}>
          <IconComponent size={20} />
          <Wrapper $m="0 0 0 10px">
-            <S.TabText $selected={selected} >{text}</S.TabText>
+            <TabText $selected={selected} >{text}</TabText>
          </Wrapper>
-      </S.Wrapper>
+      </TabWrapper>
    )
 }
 
-export default TabOption
+export default memo(TabOption);
