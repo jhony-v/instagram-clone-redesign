@@ -1,20 +1,23 @@
-import Avatar from "@components/common/Avatar";
-import Text from "@components/common/Text";
-import FlexWrapper from "@components/common/Wrappers/FlexWrapper";
-import Wrapper from "@components/common/Wrappers/Wrapper";
-import faker from "faker";
-import S from "./Atoms/elements";
+import React from "react";
+import useMeAuthenticate from "@hooks/useMeAuthenticate";
+import CallToActionButton from "@components/common/CommonButtons/CallToActionButton";
+import AccountFixedWrapper from "./components/AccountFixedWrapper";
+import UserAccountInformationNavigator from "./components/UserAccountInformationNavigator";
+import { useSetModalAuthentication } from "@hooks/useModalAuthentication";
 
 const ContainerAccountButtonNavigator = () => {
+   const { isAuthenticate, data } = useMeAuthenticate();
+   const { openModal } = useSetModalAuthentication();
    return (
-      <S.AccountButtonFixedWrapper>
-         <FlexWrapper $alignCenter>
-            <Wrapper $m="0 10px 0 0">
-               <Text $weight>Marcos juan</Text>
-            </Wrapper>
-            <Avatar image={faker.random.image()} dimension="35px" />
-         </FlexWrapper>
-      </S.AccountButtonFixedWrapper>
+      <AccountFixedWrapper>
+         {isAuthenticate && <UserAccountInformationNavigator avatar={data.avatar} username={data.username} />}
+         {!isAuthenticate && (
+            <>
+               <CallToActionButton onClick={() => openModal()}>Log In</CallToActionButton>
+               <CallToActionButton $underline onClick={() => openModal()}>Sign Up</CallToActionButton>
+            </>
+         )}
+      </AccountFixedWrapper>
    );
 };
 

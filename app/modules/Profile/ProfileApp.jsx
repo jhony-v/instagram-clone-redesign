@@ -9,9 +9,9 @@ const ProfileApp = () => {
    return (
       <Wrapper>
          <MainProfileHeader />
-         <ContainerUserStories/>
+         <ContainerUserStories />
          <DetailTabsNavigation />
-         <PreviewOfTabNavigation/>
+         <PreviewOfTabNavigation />
       </Wrapper>
    );
 };

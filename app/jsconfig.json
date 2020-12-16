@@ -5,6 +5,7 @@
             "@modules/*" : ["modules/*"],
             "@views/*" : ["views/*"],
             "@components/*" : ["packages/components/*"],
+            "@hooks/*" : ["packages/hooks/*"],
             "@containers/*" : ["packages/containers/*"],
             "@icons/*" : ["packages/common/icons/*"],
             "@styles/*" : ["packages/common/styles/*"],
