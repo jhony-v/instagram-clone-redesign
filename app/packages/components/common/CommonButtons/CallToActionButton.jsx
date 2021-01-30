@@ -1,6 +1,6 @@
 import { styled } from "styletron-react";
 
-export default styled("button", ({ $underline }) => ({
+export default styled("button", ({ $flat }) => ({
     backgroundColor: "var(--itg-app-button-call-to-action-background)",
     color: "white",
     borderRadius: "10px",
@@ -8,8 +8,8 @@ export default styled("button", ({ $underline }) => ({
     display: "flex",
     fontWeight: "bold",
     cursor: "pointer",
-    ...$underline && {
+    ...$flat && {
         color: "var(--itg-app-button-call-to-action-background)",
-        background: "none",
+        backgroundColor: "inherit",
     }
 }));

@@ -1,6 +1,6 @@
 import { styled } from "styletron-react";
 
-export const WrapperFixed = styled("div",{
+export default styled("div",{
     position : "fixed",
     width:"300px",
     top: "calc(var(--itg-navigator-height) + 60px)",

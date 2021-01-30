@@ -1,14 +1,14 @@
 import React from 'react'
-import { WrapperFixed } from './Atoms/elements'
-import HeaderTitle from './Atoms/HeaderTitle'
-import ListSuggestedUsersToMe from './Molecules/ListSuggestedUsersToMe'
+import FixedWrapper from './components/FixedWrapper'
+import HeaderTitle from './components/HeaderTitle'
+import ListSuggestedUsersToMe from './containers/ListSuggestedUsersToMe'
 
 const ContainerSuggestedFriendsForUser = () => {
     return (
-       <WrapperFixed>
+       <FixedWrapper>
           <HeaderTitle/>
           <ListSuggestedUsersToMe/>
-       </WrapperFixed>
+       </FixedWrapper>
     )
 }
 

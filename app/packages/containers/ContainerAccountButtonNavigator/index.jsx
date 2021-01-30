@@ -14,7 +14,7 @@ const ContainerAccountButtonNavigator = () => {
          {!isAuthenticate && (
             <>
                <CallToActionButton onClick={() => openModal()}>Log In</CallToActionButton>
-               <CallToActionButton $underline onClick={() => openModal()}>Sign Up</CallToActionButton>
+               <CallToActionButton $flat onClick={() => openModal()}>Sign Up</CallToActionButton>
             </>
          )}
       </AccountFixedWrapper>

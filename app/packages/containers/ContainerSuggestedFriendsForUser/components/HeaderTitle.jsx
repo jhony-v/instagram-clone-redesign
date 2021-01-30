@@ -9,8 +9,8 @@ const HeaderTitle = () => {
        <Wrapper $m="0 0 20px">
           <FlexWrapper $spaceBetween>
              <Text $weight $color="var(--itg-root-dark-alpha-color-50)">Suggestions For You</Text>
-             <Link href="/">
-                <Text $weight $fontSize="small" $as="a">View all</Text>
+             <Link href="/search/people">
+                <Text $weight $fontSize="small" $style={{cursor:"pointer"}} $as="a">View all</Text>
              </Link>
           </FlexWrapper>
        </Wrapper>

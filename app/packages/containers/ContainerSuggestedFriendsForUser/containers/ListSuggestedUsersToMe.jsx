@@ -1,7 +1,7 @@
 import React from 'react'
 import Wrapper from '@components/common/Wrappers/Wrapper';
 import faker from "faker";
-import SuggestedUser from '../Atoms/SuggestedUser';
+import SuggestedUser from '../components/SuggestedUser';
 
 const ListSuggestedUsersToMe = () => {
     return (

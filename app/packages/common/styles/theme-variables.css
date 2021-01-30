@@ -26,19 +26,16 @@
    --itg-overlay-background:rgba(0,0,0,.4);
 }
 
-body {
-   background-color: var(--itg-app-background);
-}
-body::-webkit-scrollbar {
-   background-color: transparent;
-   width: 10px;
-}
-body::-webkit-scrollbar-thumb {
-   background-color: var(--itg-app-scrollbar-thumb-background);
-   border-radius: 10px;
-}
-@media screen and (max-width: 650px) {
-   body::-webkit-scrollbar {
-      display: none;
-   }
+
+#nprogress {
+   pointer-events: none;
+   z-index: 10000;
+   position: fixed;
+   left:0;
+   width:100%;
+   top:0;
+ }
+ #nprogress .bar {
+   background: linear-gradient(-45deg,var(--itg-app-primary-color),var(--itg-app-secondary-color));
+   height: 5px;
 }

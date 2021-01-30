@@ -1,3 +1,20 @@
+body {
+   background-color: var(--itg-app-background);
+}
+body::-webkit-scrollbar {
+   background-color: transparent;
+   width: 10px;
+}
+body::-webkit-scrollbar-thumb {
+   background-color: var(--itg-app-scrollbar-thumb-background);
+   border-radius: 10px;
+}
+@media screen and (max-width: 650px) {
+   body::-webkit-scrollbar {
+      display: none;
+   }
+}
+
 html,
 body,
 div,
