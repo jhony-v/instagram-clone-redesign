@@ -6,7 +6,7 @@ const ScrollHorizontalStories = ({ data, children }) => {
       <S.WrapperHorizontalScrolling>
          {data.map((e, i) => (
             <Wrapper $m="0 20px 0 0" key={i}>
-               {children(e)}
+               {children(e,i)}
             </Wrapper>
          ))}
       </S.WrapperHorizontalScrolling>

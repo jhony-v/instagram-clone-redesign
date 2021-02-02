@@ -1,36 +1,20 @@
+import React, { forwardRef } from "react";
 import { styled } from "styletron-react";
 
 const S = {};
-S.Avatar = styled("img", ({ $isNew }) => ({
-   borderRadius: "100%",
-   "-webkit-user-drag": "none",
-   width: "100%",
-   height: "100%",
-   ...($isNew && {
-      border: "2px solid white",
-   }),
-}));
-
-S.Wrapper = styled("div", ({ $isNew, $dimension }) => ({
-   display: "inline-flex",
-   borderRadius: "100%",
+S.Avatar = styled("img", ({ $dimension }) => ({
    width: $dimension,
    height: $dimension,
-   flex: "none",
-   ...($isNew && {
-      background:
-         "linear-gradient(-65deg,var(--itg-app-primary-color),var(--itg-app-secondary-color))",
-      padding: "2px",
-   }),
+   borderRadius: "100%",
+   "-webkit-user-drag": "none",
 }));
 
-const Avatar = ({ image, isNew, onClick, dimension }) => {
+
+const Avatar = forwardRef(({ image, onClick, dimension }, ref) => {
    return (
-      <S.Wrapper $isNew={isNew} onClick={onClick} $dimension={dimension}>
-         <S.Avatar src={image} $isNew={isNew} />
-      </S.Wrapper>
+      <S.Avatar src={image} $dimension={dimension} onClick={onClick} ref={ref} />
    );
-};
+});
 
 Avatar.defaultProps = {
    dimension: "40px",
