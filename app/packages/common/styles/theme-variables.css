@@ -16,9 +16,14 @@
    --itg-root-dark-alpha-color-80: #333333;
    --itg-root-dark-alpha-color-100: #090909;
    --itg-card-color: #ffffff;
-   --itg-app-text-call-to-action-color: #3da2e6;
+   --itg-app-text-call-to-action-color: #359ee4;
    --itg-app-text-default-color: #111111;
-   --itg-app-button-call-to-action-background: #3da2e6;
+   --itg-app-text-default-color-alpha-30: #e8e8e8;
+   --itg-app-text-default-color-alpha-40: #bbbbbb;
+   --itg-app-text-default-color-alpha-45: #b1afaf;
+   --itg-app-text-default-color-alpha-50: #888888;
+   --itg-app-text-default-color-alpha-60: #5e5e5e;
+   --itg-app-button-call-to-action-background: #359ee4;
    --itg-app-button-call-to-action-color: #ffffff;
    --itg-app-icon-default-color: #0e0e0e;
    --itg-reaction-like-default-color: #0e0e0e;

@@ -10,9 +10,10 @@ export default function LinkItemAccount({ children, to }) {
             className: css({
                 borderLeft: `2px solid ${isCurrent ? "black" : "transparent"}`,
                 fontWeight: isCurrent ? "bold" : "normal",
-                color: isCurrent ? "black" : "gray",
+                color: isCurrent ? "black" : "var(--itg-app-text-default-color-alpha-60)",
                 padding: "20px 16%",
-            })
+                transition: ".5s"
+            }),
         })}>{children}</Link>
     )
 }

@@ -1,4 +1,3 @@
-import React from 'react'
 import { styled } from 'styletron-react'
 
 export const AccountCardWrapper = styled("div",{
@@ -18,6 +17,6 @@ export const AccountCardWrapperSidebar = styled("div",{
 });
 
 export const AccountCardWrapperMain = styled("div",{
-    padding: "20px 50px",
-    flex: "1"
+    padding: "20px 10px",
+    flex: 1
 });

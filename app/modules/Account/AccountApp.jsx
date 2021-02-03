@@ -1,19 +1,14 @@
 import React from 'react'
 import { AccountCardWrapper, AccountCardWrapperMain } from './components/AccountCardWrapper'
-import { Router } from "@reach/router"
 import SidebarOptionsAccount from './containers/SidebarOptionsAccount'
-import AccountScreen from './screens/AccountScreen'
-import PasswordScreen from './screens/PasswordScreen'
+import Routers from './routers'
 
 const AccountApp = () => {
     return (
        <AccountCardWrapper>
           <SidebarOptionsAccount />
           <AccountCardWrapperMain>
-             <Router basepath="/account">
-                <AccountScreen path="/" />
-                <PasswordScreen path="password" />
-             </Router>
+             <Routers/>
           </AccountCardWrapperMain>
        </AccountCardWrapper>
     )

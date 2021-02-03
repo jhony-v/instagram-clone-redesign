@@ -10,10 +10,10 @@ export default function SidebarOptionsAccount() {
           <LinkItemAccount to="account/apps">Apps and websites</LinkItemAccount>
           <LinkItemAccount to="account/sms">Email And SMS</LinkItemAccount>
           <LinkItemAccount to="account/notifications">Push Notifications</LinkItemAccount>
-          <LinkItemAccount to="account/contancts">Manage Contacts</LinkItemAccount>
+          <LinkItemAccount to="account/contacts">Manage Contacts</LinkItemAccount>
           <LinkItemAccount to="account/privacity">Privacity and Security</LinkItemAccount>
           <LinkItemAccount to="account/activity">Login activity</LinkItemAccount>
-          <LinkItemAccount to="account/instagram">Email from Instagram</LinkItemAccount>
+          <LinkItemAccount to="account/theme">Instagram Theme</LinkItemAccount>
        </AccountCardWrapperSidebar>
     )
 }
