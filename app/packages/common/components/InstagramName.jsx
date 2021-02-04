@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { styled } from "styletron-react";
 import { mediaQueries } from "../breakpoints";
 
@@ -18,7 +19,9 @@ const InstagramWrapper = styled("div", ({ $fixed }) => ({
 export default function InstagramName({ fixed }) {
    return (
       <InstagramWrapper $fixed={fixed}>
-         <img src="/images/instagram.png" />
+         <Link href="/">
+            <img src="/images/text_instagram.png" />
+         </Link>
       </InstagramWrapper>
    );
 }

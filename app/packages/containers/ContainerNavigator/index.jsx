@@ -1,5 +1,3 @@
-import BaseIconActivation from "@components/common/BaseIconActivation";
-import FloatingActionButton from "@components/common/FloatingActionButton";
 import Icons from "@icons/Icons";
 import ItemNavigator from "./components/ItemNavigator";
 import WrapperNavigator from "./components/WrapperNavigator";
@@ -12,14 +10,6 @@ const ContainerNavigator = () => {
          <ItemNavigator href="/explore" icon={Icons.Compass} />
          <ItemNavigator href="/heart" icon={Icons.Heart} />
       </WrapperNavigator>
-   );
-};
-
-ContainerNavigator.FloatingButtonCreateNewPost = ({ onClick }) => {
-   return (
-      <FloatingActionButton onClick={onClick}>
-         <BaseIconActivation icon={Icons.Camera} />
-      </FloatingActionButton>
    );
 };
 
