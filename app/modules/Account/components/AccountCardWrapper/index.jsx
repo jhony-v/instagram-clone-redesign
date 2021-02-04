@@ -18,5 +18,6 @@ export const AccountCardWrapperSidebar = styled("div",{
 
 export const AccountCardWrapperMain = styled("div",{
     padding: "20px 10px",
-    flex: 1
+    flex: 1,
+    position: "relative"
 });

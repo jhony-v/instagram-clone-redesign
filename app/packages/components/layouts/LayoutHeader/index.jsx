@@ -6,6 +6,7 @@ S.PositionFixed = withStyleDeep(FixedWrapper, {
    width: "100%",
    top: 0,
    left: 0,
+   zIndex:100,
    height: "var(--itg-navigator-height)",
    backgroundColor: "var(--itg-navigator-background)",
    display: "flex",

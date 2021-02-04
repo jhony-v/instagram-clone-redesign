@@ -40,7 +40,6 @@ const Avatar = styled("img", ({ $dimension, $overlay }) => ({
     width: `calc(${$dimension} - 4px)`,
     height: `calc(${$dimension} - 4px)`,
     border: `2px solid ${$overlay}`,
-    zIndex: "10000",
     objectFit: "cover",
     boxSizing: "border-box",
     margin: "auto",
