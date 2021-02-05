@@ -1,15 +1,14 @@
 import React from 'react'
-import { GridArea, GridWrapper, neutralBorder } from './components/PreviewLayout'
+import { GridWrapper } from './components/PreviewLayout'
+import PreviewMediaResource from './sections/PreviewMediaResource'
 import SidebarDescriptionComments from './sections/SidebarDescriptionComments'
 import SidebarHeaderAccountUser from './sections/SidebarHeaderAccountUser'
 import SidebarOptionsPublication from './sections/SidebarOptionsPublication'
 
-
 export default function PreviewCurrentUserPublication() {
     return (
        <GridWrapper>
-          <GridArea $area="image" $style={{ borderRight: neutralBorder }}>
-          </GridArea>
+          <PreviewMediaResource/>
           <SidebarHeaderAccountUser/>
           <SidebarDescriptionComments/>
           <SidebarOptionsPublication/>

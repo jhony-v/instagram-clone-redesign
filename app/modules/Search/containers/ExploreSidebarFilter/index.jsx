@@ -7,8 +7,8 @@ import ExploreWrapper from './components/ExploreWrapper'
 import ItemFilterSiderbar from './components/ItemFilterSidebar'
 import SearchEngineInputResult from './components/SearchEngineInputResult'
 
-
 export default function ExploreSidebarFilter() {
+
     return (
        <ExploreWrapper>
           <ExploreTitle text="Search people" />

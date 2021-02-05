@@ -6,7 +6,7 @@ const PublicationViewsDate = () => {
     return (
        <Wrapper>
           <Text $weight $fluid>55 views</Text>
-          <Text $fontSize="small">December 34, 2020</Text>
+          <Text $fontSize="small" $color="var(--itg-app-text-default-color-alpha-50)">December 34, 2020</Text>
        </Wrapper>
     )
 }

@@ -8,7 +8,7 @@ export const GridWrapper = styled("div", {
     backgroundColor:"var(--itg-card-color)",
     height: "550px",
     flex: "none",
-    gridTemplateColumns: "1fr 300px",
+    gridTemplateColumns: "1fr 340px",
     gridTemplateRows: "70px 1fr 200px",
     gridTemplateAreas: `
         'image sidebar-header'

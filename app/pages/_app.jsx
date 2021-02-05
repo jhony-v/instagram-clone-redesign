@@ -3,7 +3,7 @@ import "@styles/reset.css";
 import { Provider as StyletronProvider } from "styletron-react";
 import { styletron, debug } from "../styletron";
 import { ApolloProvider } from "@apollo/client";
-import clientGraphQL from "config/clientGraphQL";
+import clientGraphQL from "config/apollo/clientGraphQL";
 import GlobalErrorBoundary from "packages/common/components/GlobalErrorBoundary";
 import Router from "next/router";
 import NProgress from "nprogress";
