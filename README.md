@@ -15,3 +15,6 @@ This project is created inspired in Instagram and redesign some screens.
 * Strapi
 * Styletron
 * Zustand
+* GraphQL
+* MongoDB
+* Apollo Client
