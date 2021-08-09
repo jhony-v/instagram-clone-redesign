@@ -1250,6 +1250,40 @@
                 "type": "string"
               }
             }
+          },
+          "user_profile": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "biography": {
+                "type": "string"
+              },
+              "totalFollow": {
+                "type": "integer"
+              },
+              "totalFollowdBy": {
+                "type": "integer"
+              },
+              "name": {
+                "type": "string"
+              },
+              "fullName": {
+                "type": "string"
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
           }
         }
       },
@@ -1290,6 +1324,9 @@
             "default": false
           },
           "role": {
+            "type": "string"
+          },
+          "user_profile": {
             "type": "string"
           },
           "created_by": {

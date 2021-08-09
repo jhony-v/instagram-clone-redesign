@@ -28,6 +28,19 @@
     },
     "userPublished": {
       "type": "json"
+    },
+    "likes": {
+      "type": "integer"
+    },
+    "reshared": {
+      "type": "integer"
+    },
+    "comments": {
+      "type": "integer"
+    },
+    "publication_comments": {
+      "via": "publication",
+      "collection": "publication-comment"
     }
   }
 }

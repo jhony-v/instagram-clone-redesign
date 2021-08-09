@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "publication_comments",
+  "info": {
+    "name": "PublicationComment",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "user": {
+      "plugin": "admin",
+      "model": "user"
+    },
+    "comment": {
+      "type": "string"
+    },
+    "likes": {
+      "type": "integer"
+    },
+    "publication": {
+      "model": "publications",
+      "via": "publication_comments"
+    }
+  }
+}

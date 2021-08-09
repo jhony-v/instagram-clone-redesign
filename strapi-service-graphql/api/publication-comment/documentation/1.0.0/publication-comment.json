@@ -1,18 +1,19 @@
 {
   "paths": {
-    "/publications": {
+    "/publication-comments": {
       "get": {
         "deprecated": false,
-        "description": "Find all the publications's records",
+        "description": "",
         "responses": {
           "200": {
-            "description": "Retrieve publications document(s)",
+            "description": "response",
             "content": {
               "application/json": {
                 "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/Publications"
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
                   }
                 }
               }
@@ -51,7 +52,7 @@
         },
         "summary": "",
         "tags": [
-          "Publications"
+          "Publication-comment"
         ],
         "parameters": [
           {
@@ -194,79 +195,16 @@
       },
       "post": {
         "deprecated": false,
-        "description": "Create a new publications record",
+        "description": "Create a new record",
         "responses": {
           "200": {
-            "description": "Retrieve publications document(s)",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Publications"
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Publications"
-        ],
-        "requestBody": {
-          "description": "",
-          "required": true,
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/NewPublications"
-              }
-            }
-          }
-        }
-      }
-    },
-    "/publications/count": {
-      "get": {
-        "deprecated": false,
-        "description": "Retrieve the numver of publications documents",
-        "responses": {
-          "200": {
-            "description": "Retrieve publications document(s)",
+            "description": "response",
             "content": {
               "application/json": {
                 "schema": {
                   "properties": {
-                    "count": {
-                      "type": "integer"
+                    "foo": {
+                      "type": "string"
                     }
                   }
                 }
@@ -306,22 +244,36 @@
         },
         "summary": "",
         "tags": [
-          "Publications"
+          "Publication-comment"
         ],
-        "parameters": []
+        "requestBody": {
+          "description": "",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/NewPublication-comment"
+              }
+            }
+          }
+        }
       }
     },
-    "/publications/{id}": {
+    "/publication-comments/count": {
       "get": {
         "deprecated": false,
-        "description": "Find one publications record",
+        "description": "",
         "responses": {
           "200": {
-            "description": "Retrieve publications document(s)",
+            "description": "response",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Publications"
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
+                  }
                 }
               }
             }
@@ -359,7 +311,64 @@
         },
         "summary": "",
         "tags": [
-          "Publications"
+          "Publication-comment"
+        ],
+        "parameters": []
+      }
+    },
+    "/publication-comments/{id}": {
+      "get": {
+        "deprecated": false,
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Publication-comment"
         ],
         "parameters": [
           {
@@ -376,14 +385,18 @@
       },
       "put": {
         "deprecated": false,
-        "description": "Update a single publications record",
+        "description": "Update a record",
         "responses": {
           "200": {
-            "description": "Retrieve publications document(s)",
+            "description": "response",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Publications"
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
+                  }
                 }
               }
             }
@@ -421,7 +434,7 @@
         },
         "summary": "",
         "tags": [
-          "Publications"
+          "Publication-comment"
         ],
         "requestBody": {
           "description": "",
@@ -429,7 +442,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewPublications"
+                "$ref": "#/components/schemas/NewPublication-comment"
               }
             }
           }
@@ -449,10 +462,10 @@
       },
       "delete": {
         "deprecated": false,
-        "description": "Delete a single publications record",
+        "description": "Delete a record",
         "responses": {
           "200": {
-            "description": "deletes a single publications based on the ID supplied",
+            "description": "deletes a single record based on the ID supplied",
             "content": {
               "application/json": {
                 "schema": {
@@ -495,7 +508,7 @@
         },
         "summary": "",
         "tags": [
-          "Publications"
+          "Publication-comment"
         ],
         "parameters": [
           {
@@ -514,135 +527,111 @@
   },
   "components": {
     "schemas": {
-      "Publications": {
+      "Publication-comment": {
         "required": [
-          "id",
-          "image"
+          "id"
         ],
         "properties": {
           "id": {
             "type": "string"
           },
-          "text": {
-            "type": "string"
-          },
-          "createdDate": {
-            "type": "string",
-            "format": "date-time"
-          },
-          "image": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id",
-                "name",
-                "hash",
-                "mime",
-                "size",
-                "url",
-                "provider"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "name": {
-                  "type": "string"
-                },
-                "alternativeText": {
-                  "type": "string"
-                },
-                "caption": {
-                  "type": "string"
-                },
-                "width": {
-                  "type": "integer"
-                },
-                "height": {
-                  "type": "integer"
-                },
-                "formats": {
-                  "type": "object"
-                },
-                "hash": {
-                  "type": "string"
-                },
-                "ext": {
-                  "type": "string"
-                },
-                "mime": {
-                  "type": "string"
-                },
-                "size": {
-                  "type": "number"
-                },
-                "url": {
-                  "type": "string"
-                },
-                "previewUrl": {
-                  "type": "string"
-                },
-                "provider": {
-                  "type": "string"
-                },
-                "provider_metadata": {
-                  "type": "object"
-                },
-                "related": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
+          "user": {
+            "required": [
+              "id",
+              "email"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "firstname": {
+                "type": "string"
+              },
+              "lastname": {
+                "type": "string"
+              },
+              "username": {
+                "type": "string"
+              },
+              "email": {
+                "type": "string"
+              },
+              "password": {
+                "type": "string"
+              },
+              "resetPasswordToken": {
+                "type": "string"
+              },
+              "registrationToken": {
+                "type": "string"
+              },
+              "isActive": {
+                "type": "boolean"
+              },
+              "roles": {
+                "type": "array",
+                "items": {
                   "type": "string"
                 }
+              },
+              "blocked": {
+                "type": "boolean"
               }
             }
           },
-          "userPublished": {
-            "type": "object"
+          "comment": {
+            "type": "string"
           },
           "likes": {
             "type": "integer"
           },
-          "reshared": {
-            "type": "integer"
-          },
-          "comments": {
-            "type": "integer"
-          },
-          "publication_comments": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "user": {
-                  "type": "string"
-                },
-                "comment": {
-                  "type": "string"
-                },
-                "likes": {
-                  "type": "integer"
-                },
-                "publication": {
-                  "type": "string"
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
+          "publication": {
+            "required": [
+              "id",
+              "image"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "text": {
+                "type": "string"
+              },
+              "createdDate": {
+                "type": "string"
+              },
+              "image": {
+                "type": "array",
+                "items": {
                   "type": "string"
                 }
+              },
+              "userPublished": {
+                "type": "object"
+              },
+              "likes": {
+                "type": "integer"
+              },
+              "reshared": {
+                "type": "integer"
+              },
+              "comments": {
+                "type": "integer"
+              },
+              "publication_comments": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
               }
             }
           },
@@ -652,32 +641,19 @@
           }
         }
       },
-      "NewPublications": {
+      "NewPublication-comment": {
         "properties": {
-          "text": {
+          "user": {
             "type": "string"
           },
-          "createdDate": {
-            "type": "string",
-            "format": "date-time"
-          },
-          "userPublished": {
-            "type": "object"
+          "comment": {
+            "type": "string"
           },
           "likes": {
             "type": "integer"
           },
-          "reshared": {
-            "type": "integer"
-          },
-          "comments": {
-            "type": "integer"
-          },
-          "publication_comments": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
+          "publication": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",
@@ -693,9 +669,5 @@
       }
     }
   },
-  "tags": [
-    {
-      "name": "Publications"
-    }
-  ]
+  "tags": []
 }

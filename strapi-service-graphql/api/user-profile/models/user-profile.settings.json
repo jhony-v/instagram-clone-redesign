@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "user_profiles",
+  "info": {
+    "name": "UserProfile"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "biography": {
+      "type": "richtext"
+    },
+    "totalFollow": {
+      "type": "integer"
+    },
+    "totalFollowdBy": {
+      "type": "integer"
+    },
+    "name": {
+      "type": "string"
+    },
+    "fullName": {
+      "type": "string"
+    }
+  }
+}
