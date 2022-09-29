@@ -8,6 +8,7 @@
     <a href="https://instagram-clone-redesign.vercel.app" >DEMO APPLICATION</a> 
 </h4>
 
+![instagram](./preview.png)
 
 ## Overview
 
